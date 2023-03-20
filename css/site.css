@@ -1,0 +1,144 @@
+:root{
+    --p-font-size: 1.2rem;
+
+    --p-background-color: #081A28;
+    --p-light-color: #9DA3BB;
+    --p-cool-color: #7E819A;
+    --p-blue: #222D4C;
+    --p-highlight-color: white;
+
+    --p-font-color: #e9a447;
+--p-font-family: 'Montserrat', sans-serif;
+
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    direction: flex-column;
+    background-color:  var(--p-background-color);
+    color: whitesmoke;
+    display: flex;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+.wrap{
+
+    padding: 0 1rem 0 1rem;
+
+}
+main{
+    flex: 1 0 auto;
+  
+}
+
+
+/* Navigation Section Start */
+
+.logo{
+    max-height: 10%;
+    max-width: 10%;
+    margin-left: 20px;
+}
+
+.nav-link{
+    color: var(--p-cool-color); 
+}
+
+.active{
+    color: var(--p-highlight-color) !important;
+}
+.nav-link:hover{
+    color: #ffd700;
+
+}
+
+/* Navigation Section End */
+
+header{
+    background: linear-gradient(45deg, transparent, #081A28);
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+
+.herobanner{
+    min-height: 591px;
+    max-height: 590px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center right;
+   
+    overflow: hidden;
+ 
+   
+}
+
+.herobanner::before{
+    content: "";
+    background-image: url(/img/connecteddots.jpg);
+    background-size: cover;
+    position: absolute;
+    opacity: 20%;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+
+
+}
+
+
+.bannerimg{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+  padding-left: 100px;
+  margin-left: 100px;
+  z-index: 2;
+  
+}
+
+
+
+.bannertext{
+    align-items: right;
+    justify-content: flex-end;
+    margin-top: 21rem;
+    text-align: right;
+    font-size: 40px;
+    margin-right: 1rem;
+    margin-left: 1040px;
+   
+    
+}
+
+
+
+.hello:hover{
+color: var(--p-highlight-color);
+opacity: 100%;
+z-index: 3;
+border: solid;
+border-radius: 10px;
+position: relative;
+
+cursor: pointer;
+display: inline-block;
+}
+
+/* End header - Banner */
+
+.aboutme{
+    color: whitesmoke;
+    height: 200px;
+}
